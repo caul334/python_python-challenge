@@ -5,11 +5,12 @@
 ```python
 print(2**38)
 ```
+<br>
 
 ## Challenge 1
 
 ```python
-<!--# solution code-->
+# solution code
 message = ''
 
 gap_ch = ord("M") - ord("K")
@@ -26,13 +27,13 @@ for ch in enc_message:
     message += chr(ch_dec)
 print(message)
 
-<!--# recommend code-->
+# recommend code
 enc_message = """g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj."""
 enc_url = "map"
 intab = "abcdefghijklmnopqrstuvwxyz"
 outtab = "cdefghijklmnopqrstuvwxyzab"
 result = str.maketrans(intab, outtab)
 print(enc_message.translate(result))
-<!--# [result] => ocr-->
+# [result] => ocr
 print(enc_url.translate(result))
 ```
